@@ -7,16 +7,15 @@ app to create api endpoints using DRF.
 
 The steps for installation are as follow:
 
-Detailed documentation is in the "docs" directory.
-
 Quick start
 -----------
 
-1. Install "rest_framework"::
+1. Install "rest_framework"
+  ::
+      pip install djangorestframework
 
-    `pip install djangorestframework`
+2.Once installed add the ``rest_framework`` into your "INSTALLED_APPS" in your "settings.py":
 
-2. Once installed add the ``rest_framework`` into your "INSTALLED_APPS" in your ``settings.py``::
 
     INSTALLED_APPS = [
         ...
@@ -27,13 +26,15 @@ Quick start
 
      ``pip install samplemed_users_api``
 
-4. Once installed add the "User" app into your ``INSTALLED_APP`` in ``settings.py``::
+4. Once installed add the "User" app into your ``INSTALLED_APP`` in "settings.py".::
+
 
     INSTALLED_APPS = [
         ...
         'rest_framework',
         'Users',
     ]
+
 
 5. Make db migrations to make the app work::
 
@@ -45,14 +46,18 @@ Quick start
 
 7. Add the urls from "User" app into your main url::
 
+
      ``from django.conf.urls import include``
 
-- URL path that will display as default 
-  admin and the empty path as the API endpoints (router.urls)::
+
+URL path that will display as default 
+admin and the empty path as the API endpoints (router.urls)
 
     urlpatterns = [
         path('admin/', admin.site.urls),
         path('users/', include("Users.urls")), 
     ]
 
-8. Go to  "https://your.url.com/users/" and see the endpoints.
+
+7. Go to  "https://your.url.com/users/" and see the endpoints.
+

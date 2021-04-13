@@ -9,13 +9,13 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django_samplemed_user_api',
-    version='0.0.1',
+    version='0.0.2',
     packages=find_packages(),
     include_package_data=True,
     license='MIT License',  # example license
     description='A simple User app for DRF',
     long_description=README,
-    url='https://github.com/EliasOPrado2/users',
+    url='https://github.com/EliasOPrado/users-package-api',
     author='Elias Prado',
     author_email='eliasprado123@outlook.com.com',
     classifiers=[

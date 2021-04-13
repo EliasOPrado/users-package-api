@@ -1,4 +1,3 @@
 include LICENSE
 include README.rst
-recursive-include Users/static *
-recursive-include Users/templates *
+recursive-include Users/api *
